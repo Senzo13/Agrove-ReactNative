@@ -1,0 +1,3 @@
+// AUTH CONST
+
+export const AUTH_STATE_CHANGE = "AUTH_STATE_CHANGE"

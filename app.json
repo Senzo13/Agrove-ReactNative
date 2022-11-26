@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Agrove",
+    "slug": "agroveV2",
+    "version": "2.0.15",
+    "scheme": "agrovev2",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png"
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSContactsUsageDescription": "Agrove requires access to contacts for send invites to your contacts. No data is collected or stored.",
+        "NSCameraUsageDescription": "Agrove requires access to your camera to scan QR codes.",
+        "LSApplicationQueriesSchemes": [
+          "sms"
+        ]
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.agrove.ios"
+    },
+    "android": {
+      "permissions": [
+        "READ_CONTACTS",
+        "CAMERA"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo/android_logo.png",
+        "backgroundColor": "#4ABF86"
+      },
+      "package": "fr.devid.plantR",
+      "versionCode": 71
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ff93caf7-4207-4ab8-829e-0ff9e93d68cb"
+      }
+    }
+  }
+}
